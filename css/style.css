@@ -117,7 +117,9 @@ li a{
   font-size: 100px;
   margin: 30px;
 }
-
+#contact ul li a{
+  color: black;
+}
 
 
 
