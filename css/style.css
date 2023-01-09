@@ -8,6 +8,9 @@
 html{
   scroll-behavior: smooth;
 }
+/* body{
+  overflow: auto;
+} */
 nav {
   z-index: 9;
   display: flex;
@@ -54,9 +57,8 @@ li a{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 90px;
-  padding-bottom: 40px;
   background-color: #2D3238;
+  min-height: 100vh;
 
 }
 
@@ -67,14 +69,15 @@ li a{
 
 
 
-
 /* about */
-#about{
-  height: 800px;
+#about .container{
+  position: relative;
+  top: 150px;
+  min-height: 100vh;
 
 }
-.container{
-  margin-top: 50px;
+.container h2{
+  margin-top: 100px;
 }
 .container h2{
   font-size: 50px;
@@ -82,7 +85,7 @@ li a{
   text-align: center;
   margin-top: 20px;
 }
-.card {
+#about .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 10px;
   max-width: 95%;
@@ -90,15 +93,17 @@ li a{
   margin: auto;
   text-align: justify;
 }
-
-
-.card .card-content {
+#about .card .card-content {
   padding: 2px 16px;
 }
 
-
-
 /* contact */
+#contact .container{
+  position: relative;
+  top: 150px;
+  min-height: 100vh;
+
+}
 #contact h2{
   text-align: center;
   font-size: 50px;
@@ -120,68 +125,63 @@ li a{
 #contact ul li a{
   color: black;
 }
-
-
-
-
-.portfolio #portfolio-flters {
-  list-style: none;
-  display: flex;
-  margin-bottom: 20px;
-  justify-content: center;
+#contact ul li a:hover{
+  color:blue ;
+}
+#contact ul li a.purple:hover{
+  color:rgb(220, 55, 241) ;
+}
+#contact ul li a.green:hover{
+  color:#42CBA5;
+}
+#contact ul li a.red:hover{
+  color:red;
 }
 
-.portfolio #portfolio-flters li {
-  cursor: pointer;
-  display: inline-block;
-  margin: 10px 5px;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 1;
-  color: #444444;
-  transition: all 0.3s;
-  padding: 8px 20px;
-  border-radius: 50px;
-  font-family: "Poppins", sans-serif;
+/* project */
+#project{
+  background-color: #2D3238;
+
+}
+#project .container{
+  position: relative;
+  min-height: 100vh;
+  top: 150px;
 }
 
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
-  background: #47b2e4;
-  color: #fff;
+#project .title{
+  text-align: center;
+  margin-top: 5px;
+}
+#project .project-image{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
 }
 
 #project .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 10px;
+  
+  
+}
+
+#project .card-header{
+  background-color: #eee;
+  padding: 10px;
+}
+#project .card-header h3{
   text-align: center;
 }
-#project .project-foto{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 
-.card.rounded {
-  border-radius: 20px;
-  margin: 20px;
-  padding-bottom: 20px;
+#project .card-body {
+  padding: 20px;
 }
-
-.card img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-.card .card-content {
-  padding: 2px 16px;
-}
-
-.project-foto.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: calc(25% - 16px);
-  margin: 8px;
-  text-align: center;
+#project .card-body img{
+  width: 360px;
+  border-radius: 10px;
 }
