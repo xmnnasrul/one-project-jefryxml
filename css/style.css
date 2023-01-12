@@ -138,9 +138,12 @@ li a{
   color:red;
 }
 
+
 /* project */
 #project{
   background-color: #2D3238;
+  position: relative;
+  z-index: 5;
 
 }
 #project .container{
@@ -148,31 +151,38 @@ li a{
   min-height: 100vh;
   top: 150px;
 }
+#project .container h2{
+  color: white;
+}
 
 #project .title{
   text-align: center;
   margin-top: 5px;
+  color: white;
+  z-index: 5;
 }
 #project .project-image{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
+  margin-top: 10px;
 }
 
 #project .card {
   border: 1px solid #ccc;
   border-radius: 10px;
-    display: inline-block;
+  display: inline-block;
     width: auto;
-    height: auto;
     margin: 10px;
-  
+  position: relative;
+
   
 }
 
 #project .card-header{
   background-color: #eee;
   padding: 10px;
+  border-radius: 10px 10px 0 0;
 }
 #project .card-header h3{
   text-align: center;
@@ -180,8 +190,37 @@ li a{
 
 #project .card-body {
   padding: 20px;
+  height: 200px;
+  overflow: hidden;
 }
 #project .card-body img{
-  width: 360px;
+  width: 300px;
   border-radius: 10px;
+  height: auto;
+}
+
+#popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#popup-gambar {
+  position: absolute;
+  max-width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+
+#project .isi-popup{
+  z-index: 55;
+  position: relative;
 }

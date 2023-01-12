@@ -58,28 +58,59 @@
       </div>
     </section>
     <section id="project" class="portfolio">
+      <div class="isi-popup">
+
+        <div id="popup-container" style="display: none;">
+          <img id="popup-gambar" src="assets/foto 1.png">
+        </div>
+        
+        <div id="popup-container" style="display: none;">
+          <img src="assets/foto 2.png" id="popup-gambar">
+        </div>
+      </div>
+
       <div class="container">
         <h2>My Project</h2>
         <div class="title">
           <h3 class="title">this is my project</h3>
         </div>
+
         <div class="project-image">
           <!-- project -->
           <div class="card">
             <div class="card-header">
               <h3>FAKE MVP M4</h3>
             </div>
-            <div class="card-body">
-              <img src="assets/foto 1.png" alt="">
+
+              <div class="card-body" id="trigger" onmouseover="showPopupGambar()" onmouseout="hidePopupGambar()">
+                <img src="assets/foto 1.png" alt="">
+              </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h3>POSTER SCHLAFEN</h3>
+            </div>
+            <div class="card-body" id="trigger" onmouseover="showPopupGambar()" onmouseout="hidePopupGambar()">
+              <img src="assets/foto 2 prv.png" alt="">
             </div>
           </div>
 
           <div class="card">
             <div class="card-header">
-              <h3>FAKE MVP M4</h3>
+              <h3>DIMAS SLEBEW</h3>
             </div>
-            <div class="card-body">
-              <img src="assets/foto 1.png" alt="">
+            <div class="card-body" id="trigger" onmouseover="showPopupGambar()" onmouseout="hidePopupGambar()">
+              <img src="assets/SIXSHIFTS 4 - Copy.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h3>POSTER SIXSHIFTS</h3>
+            </div>
+            <div class="card-body" id="trigger" onmouseover="showPopupGambar()" onmouseout="hidePopupGambar()">
+              <img src="assets/SIXSHIFTS POSTER - Copy.png" alt="">
             </div>
           </div>
 

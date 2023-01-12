@@ -9,3 +9,10 @@ video.addEventListener('ended', function() {
   this.currentTime = 0;
   this.play();
 }, false);
+
+        function showPopupGambar() {
+          document.getElementById("popup-container").style.display = "block";
+        }
+        function hidePopupGambar() {
+          document.getElementById("popup-container").style.display = "none";
+        }
