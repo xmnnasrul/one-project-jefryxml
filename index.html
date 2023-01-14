@@ -39,6 +39,7 @@
       </ul>
     </nav>
     <!-- hero -->
+    
     <div class="image" id="home">
       <video class="vidio" autoplay muted loop>
         <source src="assets/hero.mp4" type="video/mp4" />
@@ -60,14 +61,10 @@
     <section id="project" class="portfolio">
       <div class="isi-popup">
 
-        <div id="popup-container" style="display: none;">
+        <div id="popup-container" class="popupt" style="display: none;">
           <img id="popup-gambar" src="assets/foto 1.png">
         </div>
         
-        <div id="popup-container" style="display: none;">
-          <img src="assets/foto 2.png" id="popup-gambar">
-        </div>
-      </div>
 
       <div class="container">
         <h2>My Project</h2>
@@ -77,12 +74,12 @@
 
         <div class="project-image">
           <!-- project -->
-          <div class="card">
+          <div class="card" id="trigger">
             <div class="card-header">
               <h3>FAKE MVP M4</h3>
             </div>
 
-              <div class="card-body" id="trigger" onmouseover="showPopupGambar()" onmouseout="hidePopupGambar()">
+              <div class="card-body">
                 <img src="assets/foto 1.png" alt="">
               </div>
           </div>
@@ -126,7 +123,9 @@
           <ul>
             <li>
               <a class="green" href="https://api.whatsapp.com/send/?phone=6282134393412&text&type=phone_number&app_absent=0" target="_blank">
-              <i class="fa-brands fa-square-whatsapp"></i> </a></li>
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            </li>
   
             <li>
               <a class="purple" href="https://instagram.com/shadexml_?igshid=MDM4ZDc5MmU=" target="_blank">
